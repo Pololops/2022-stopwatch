@@ -1,19 +1,15 @@
 import PropTypes from 'prop-types';
 import './Button.css';
 
-export default function Button({ buttonAction, onClick }) {
+export default function Button({ label, onClick }) {
 	return (
-		<button className="button" onClick={onClick}>
-			{(!buttonAction) ? 'Start' : 'Pause'}
+		<button key={label} className={`button ${label.toLowerCase()}-button`} onClick={onClick}>
+			{label}
 		</button>
 	);
 }
 
-Button.defaultProps = {
-	buttonAction: true,
-};
-
 Button.propTypes = {
-	buttonAction: PropTypes.bool,
+	label: PropTypes.string.isRequired,
 	onClick: PropTypes.func.isRequired,
 };

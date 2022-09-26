@@ -1,14 +1,29 @@
 .button {
-  width: 8rem;
+  width: 6rem;
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border: none;
+  color: white;
+  text-shadow: 0 -1px 0 black;
   border-radius: 5px;
   margin-top: 0;
-  margin-bottom: 3px;
-  background-color: #00ced1;
-  box-shadow: 0 4px 0 #008184;
+  margin-bottom: 1px;
+  background-color: #00d173;
+  border-bottom: solid 6px #007e45;
+  box-shadow: 0 0 1px black;
   transition: all 200ms, margin 10ms, box-shadow 90ms;
+}
+
+.stop-button,
+.reset-button {
+  background-color: #f61e42;
+  border-bottom-color: #a3132b;
+}
+
+.app:hover .button {
+  border-bottom-width: 2px;
+  text-shadow: 0 -1px 0 dimgray;
+  box-shadow: 0 0 0 black;
 }
 
 .button:hover {
@@ -16,8 +31,9 @@
   cursor: pointer;
 }
 
-.button:active {
-  margin-top: 3px;
+.app:hover .button:active {
+  margin-top: 2px;
   margin-bottom: 0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  box-shadow: none;
+  border-bottom-width: 1px;
 }

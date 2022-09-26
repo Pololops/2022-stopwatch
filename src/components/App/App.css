@@ -1,14 +1,29 @@
 .app {
-  width: 12rem;
-  font-size: 1.5rem;
-  border-radius: 1.5rem;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #5a6480;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 4rem;
-  align-items: center;
-  box-shadow: 0 8px 0 #21252f;
+	width: 16rem;
+	font-size: 1.5rem;
+	border-radius: 1.5rem;
+	margin: 2rem auto;
+	padding: 2rem;
+	background-color: #5a6480;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 4rem;
+  border-bottom: solid 10px #21252f;
+  transform: rotateX(20deg);
+  box-shadow: 0 4px 10px black;
+  transition: all 300ms ease-in-out, box-shadow 200ms ease-out;
+}
+
+.app:hover {
+  border-bottom-width: 4px;
+  transform: rotateX(0deg);
+  box-shadow: 0 2px 10px black;
+}
+
+.buttons {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+  height: 2.8rem;
 }

@@ -1,6 +1,7 @@
 import './App.css';
 import Button from '../Button/Button';
-import Watch from '../Watch/Watch';
+import Timer from '../Timer/Timer';
+import List from '../List/List';
 import { useEffect, useRef, useState } from 'react';
 
 function App() {
@@ -42,13 +43,16 @@ function App() {
 	}, [startButtonLabel]);
 
 	return (
-		<div className="app">
-			<Watch timer={timer} />
-			<div className="buttons">
-				<Button onClick={onClickStartHandler} label={startButtonLabel} />
-				<Button onClick={onClickStopHandler} label={stopButtonLabel} />
+		<>
+			<div className="watch">
+				<Timer timer={timer} />
+				<div className="buttons">
+					<Button onClick={onClickStartHandler} label={startButtonLabel} />
+					<Button onClick={onClickStopHandler} label={stopButtonLabel} />
+				</div>
 			</div>
-		</div>
+			<List />
+		</>
 	);
 }
 

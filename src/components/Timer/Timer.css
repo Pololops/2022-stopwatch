@@ -1,0 +1,21 @@
+.timer {
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	letter-spacing: 0.05rem;
+	padding: 2rem 3rem;
+	font-variant-numeric: tabular-nums;
+	background: linear-gradient(
+		0deg,
+		#000000 0%,
+		#000000 50%,
+		#333333 51%,
+		#333333 100%
+	);
+	filter: contrast(1);
+	transition: filter 300ms ease-out;
+}
+
+.watch:hover .timer {
+	filter: contrast(1.3);
+}

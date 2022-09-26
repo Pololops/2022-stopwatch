@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
-import './Watch.css';
+import './Timer.css';
 import format from '../../middleware/timeFormat';
 
-export default function Watch({ timer }) {
+export default function Timer({ timer }) {
 	return (
-		<div className="watch" data-testid="Watch">
+		<div className="timer" data-testid="Timer">
 			{format(timer)}
 		</div>
 	);
 }
 
-Watch.propTypes = {
+Timer.propTypes = {
 	timer: PropTypes.number.isRequired,
 };

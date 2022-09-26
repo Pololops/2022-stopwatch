@@ -1,0 +1,14 @@
+.app {
+  width: 12rem;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #5a6480;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4rem;
+  align-items: center;
+  box-shadow: 0 8px 0 #21252f;
+}

@@ -2,7 +2,7 @@ const reducer = (state, action) => {
 	switch (action.type) {
 		case 'CHANGE_BUTTON_LABEL': {
 			if (action.payload === 'Start')
-				return [{ ...state[0], label: 'Turn' }, { ...state[1] }];
+				return [{ ...state[0], label: 'Turn' }, { ...state[1], label: 'Stop' }];
 
 			if (action.payload === 'Stop')
 				return [

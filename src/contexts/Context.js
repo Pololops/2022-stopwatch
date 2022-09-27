@@ -22,7 +22,7 @@ const ContextProvider = ({ children }) => {
 
 		if (buttonsState[1].label === 'Reset' && timer !== 0) {
 			setTimerList((prevState) => [...prevState, timer]);
-		} else {
+		} else if (buttonsState[0].label !== 'Turn') {
 			setTimerList([]);
 			setTimer(0);
 		}

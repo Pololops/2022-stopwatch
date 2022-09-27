@@ -7,10 +7,12 @@ export default function Button({ label }) {
 	const { timer, setTimerList, dispatch } = useContext(Context);
 
 	const handleClick = () => {
-		if (label !== 'Turn') {
-			dispatch({ type: 'CHANGE_BUTTON_LABEL', payload: label });
-		} else {
+		if (label === 'Turn') {
 			setTimerList((prevState) => [...prevState, timer]);
+		}
+
+		if (label === 'Start' || timer !== 0) {
+			dispatch({ type: 'CHANGE_BUTTON_LABEL', payload: label });
 		}
 	};
 

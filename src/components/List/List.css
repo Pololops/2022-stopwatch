@@ -1,0 +1,28 @@
+.list {
+  min-height: 0;
+	margin-inline: auto;
+	width: fit-content;
+	padding: 2rem 0 0 0;
+	list-style: none;
+	font-size: 1.2rem;
+	letter-spacing: 0.05rem;
+	font-variant-numeric: tabular-nums;
+	transform: translateY(-3.5rem);
+	background-color: whitesmoke;
+	box-shadow: 0 1px 10px black;
+	border-radius: 6px;
+  transition: min-height 200ms;
+  overflow: hidden;
+}
+
+.list-item {
+	padding: 0.4rem 2rem;
+}
+
+.list-item:nth-child(2n) {
+  background-color: #dedede;
+}
+
+.list-item:last-child {
+  padding-bottom: 1rem;
+}

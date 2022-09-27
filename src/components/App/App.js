@@ -21,7 +21,7 @@ function App() {
 	};
 
 	const onClickStopHandler = () => {
-		if (stopButtonLabel === 'Stop') {
+		if (stopButtonLabel === 'Stop' && timer !== 0) {
 			clearInterval(interval.current);
 			setTimerList([...timerList, timer]);
 			setStartButtonLabel('Start');
@@ -51,7 +51,7 @@ function App() {
 					<Button onClick={onClickStopHandler} label={stopButtonLabel} />
 				</div>
 			</div>
-			<List />
+			{timerList.length > 0 && <List items={timerList} />}
 		</>
 	);
 }

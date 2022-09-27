@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import './Timer.css';
-import format from '../../middleware/timeFormat';
+import format from '../../utils/timeFormat';
 
 export default function Timer({ timer }) {
 	return (

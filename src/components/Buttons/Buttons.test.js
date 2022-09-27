@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import Button from './Button';
+import Buttons from './Buttons';
 
-const setup = () => render(<Button />);
+const setup = () => render(<Buttons />);
 
 describe('Test for App component', () => {
 	it('should contain the Button component', () => {
